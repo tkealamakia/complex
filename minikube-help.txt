@@ -1,0 +1,23 @@
+Download:
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+Install:
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+Verify:
+minikube version
+
+Start:
+minikube start
+minikube status
+kubectl get nodes
+
+Install ingress:
+minikube addons enable ingress
+kubectl get pods -n ingress-nginx
+
+Stop:
+minikube stop
+
+Delete:
+minikube delete
